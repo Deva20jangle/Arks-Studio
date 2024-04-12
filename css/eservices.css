@@ -1,0 +1,142 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    transition:all .2s cubic-bezier(.34,1.12,.68,1.31);
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../images/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    /* background: #3f3f3f; */
+}
+
+.social-links{
+    display: flex;
+    height: 90px;
+}
+
+.social-links ul{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+}
+
+.social-items{
+    list-style: none;
+}
+
+.social-items a{
+    padding: 10px, 20px;
+    color: black;
+    margin-left: 30px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+.social-items a .fa{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.social-items a .fa:hover{
+    color: #fff;
+}
+
+.social-items a:hover{
+    transform: translate(0, -10px);
+}
+
+.social-items:nth-child(1) a:hover{
+    background-color: #3b5999;
+}
+
+.social-items:nth-child(2) a:hover{
+    background-color: #55acee;
+}
+
+.social-items:nth-child(3) a:hover{
+    background-color: #e4405f;
+}
+
+.social-items:nth-child(4) a:hover{
+    background-color: #0077B5;
+}
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    background-color: #272727;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:20px 0;
+    list-style: none;
+}
+
+.controls .buttons{
+    height:40px;
+    width: 140px;
+    background:#fff;
+    color:#666;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin:20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.controls .buttons.active{
+    background:coral;
+    color:#fff;
+}
+
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container .image{
+    height:300px;
+    width: 400px;
+    overflow: hidden;
+    border:7px solid #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    margin: 40px;
+}
+
+.image-container .image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.firstHalf{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
